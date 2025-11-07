@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .word {
+        color: brown;
+        transition: 0.3s;
+    }
+    .word:hover{
+        color: aqua;
+        letter-spacing: 5px;
+    }
+    @keyframes rainbow{
+        0%{color: aqua;}
+        25%{color: brown;}
+        50%{color: chartreuse;}
+        75%{color: black;}
+        100%{color: darkslategray;}
+    }
+    .rainbow {
+        animation: rainbow 3s infinite;
+        margin: 20px;
+    }
+@keyframes  pic{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translatey(-20px);}
+}
+.pic{
+    animation: pic 2s infinite;
+}
+</style>
+</head>
+<body>
+<div class="word"><h2>Hover</h2></div>
+<h2 class="rainbow">Alisha</h2>
+<img src="images.png" class="pic"alt="img">
+</body>
+</html>

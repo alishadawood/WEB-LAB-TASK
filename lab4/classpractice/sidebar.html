@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    
+<input type="text" placeholder="Search...">
+<button>Go</button>
+
+<style>
+input {padding:5px;}
+button {padding:6px;background:#02fa17;color:#fff;border:none;}
+</style>
+<div class="dropdown">
+  <button>Menu ▼</button>
+  <div class="content">
+    <a href="#">Link1</a>
+    <a href="#">Link2</a>
+  </div>
+</div>
+
+<style>
+.dropdown {position:relative;display:inline-block;}
+.content {display:none;position:absolute;background:#eee;}
+.dropdown:hover .content {display:block;}
+.content a {display:block;padding:5px;text-decoration:none;}
+</style> 
+<br><br>
+<div class="pagination">
+  <a href="#">1</a> <a href="#" class="active">2</a> <a href="#">3</a>
+</div>
+<style>
+.pagination a {padding:5px 10px;border:1px solid #ccc;text-decoration:none;}
+.active {background:#fc09e7;color:#fff;}
+.pagination a:hover {background:#f1f50a}
+</style><br>
+
+    <div class="sidebar">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+</div>
+
+<style>
+.sidebar {width:120px;background:#00e0f0f1;height:100vh;padding:10px;}
+.sidebar a {color:#ff0505ef;display:block;margin:10px 0;text-decoration:none;}
+.sidebar a:hover {background:#f1f50a;}
+</style>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family:'Times New Roman', Times, serif;
+}
+
+
+.rainbow-text {
+  font-size: 48px;
+  font-weight: bold;
+  animation: rainbow 10s infinite linear;
+}
+
+@keyframes rainbow {
+  10%   { color: rgb(255, 0, 0); }
+  25%  { color: orange; }
+  50%  { color: rgb(4, 87, 4); }
+  75%  { color: rgba(0, 0, 255, 0.534); }
+  100% { color: rgba(247, 0, 247, 0.986); }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Animations & Transitions</title>
+  <style>
+    /* === Example 1: Text Hover Transition === */
+    .word {
+      color: blue;
+      transition: 0.5s;
+    }
+    .word:hover {
+      color: red;
+      letter-spacing: 5px;
+    }
+
+    /* === Example 2: Text Animation (Rainbow Effect) === */
+    @keyframes rainbow {
+      0% {color: red;}
+      25% {color: orange;}
+      50% {color: green;}
+      75% {color: blue;}
+      100% {color: purple;}
+    }
+    .rainbow {
+      animation: rainbow 3s infinite;
+    }
+
+    /* === Example 3: Image Zoom on Hover === */
+    
+    .pic {
+      transition: transform 0.5s;
+      margin: 20px;
+    }
+    .pic:hover {
+      transform: scale(1.2);
+    }
+
+    /* === Example 4: Bouncing Image Animation === */
+    @keyframes bounce {
+      0%,100% {transform: translateY(0);}
+      50% {transform: translateY(-20px);}
+    }
+    .bounce {
+      animation: bounce 2s infinite;
+    }
+
+    /* General Styling */
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin-top: 30px;
+    }
+    h2 {
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Text Transition -->
+  <h2 class="word">Hover Over Me</h2>
+
+  <!-- Animated Text -->
+  <h2 class="rainbow">I am Animated Text</h2>
+
+  <!-- Image Zoom -->
+  <img src="goat.jpeg" class="pic" alt="Zoom Image">
+
+  <!-- Bouncing Image -->
+  <img src="balloon.jpeg" class="bounce" alt="Bouncing Image">
+
+</body>
+</html></style>
