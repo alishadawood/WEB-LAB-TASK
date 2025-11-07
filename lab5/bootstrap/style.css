@@ -1,0 +1,37 @@
+/* Center cards in the middle of the page */
+body {
+  background: #f8f9fa;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.card-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Make all card images the same size */
+.card-img-fixed {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Simple hover effect for all cards */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.card-group {
+  gap: 20px; /* cards ke darmiyan space */
+}
