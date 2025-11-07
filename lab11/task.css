@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+    font-family: Arial;
+    background-color: lightyellow;
+    padding: 30px;
+}
+
+input, select, button {
+    font-size: 16px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.emoji {
+    font-size: 100px;
+    display: inline-block;
+    transition: transform 0.3s;
+    margin-top: 20px;
+}
+
+.emoji:hover {
+    transform: scale(1.5);
+}
