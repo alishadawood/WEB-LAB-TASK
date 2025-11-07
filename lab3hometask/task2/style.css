@@ -1,0 +1,53 @@
+body{
+    background-color:aquamarine;
+}
+h1{
+    color:yellow;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background:hotpink;
+    padding: 10px;
+}
+.navbar a{
+    color: rgb(47, 6, 145);
+    text-decoration: none;
+     padding: 8px 15px;
+     font-size: 16px;
+     transition:width 0.3s;
+}
+.navbar a:hover{
+    background: rgb(81, 255, 0);
+    border-radius: 5px;
+
+}
+.slider {
+  width: 600px;
+  height: 180px;
+  overflow: hidden;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.slides {
+  display:flex;
+  width: 250%; 
+  animation: slide 15s infinite;
+}
+
+.slides img {
+  width: 25%;
+  height: 160%;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0%   { transform: translateX(0); }
+  33%  { transform: translateX(-100%); }
+  66%  { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+}
+
